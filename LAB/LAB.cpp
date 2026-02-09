@@ -7,7 +7,7 @@ int main() {
 
 	int f1 = 0;
 	int f2 = 1;
-	int s;
+	int s = 0;
 	int n;
 	
 	cout << "Введите n чисел Фибоначчи" << endl;

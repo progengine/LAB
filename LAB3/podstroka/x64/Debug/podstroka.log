@@ -1,0 +1,4 @@
+﻿  podstroka.cpp
+C:\Users\Илья\Desktop\c++\podstroka\podstroka\podstroka.cpp(15,13): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Илья\Desktop\c++\podstroka\podstroka\podstroka.cpp(30,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  podstroka.vcxproj -> C:\Users\Илья\Desktop\c++\podstroka\x64\Debug\podstroka.exe

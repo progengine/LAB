@@ -1,0 +1,37 @@
+Test 1
+
+a3s5f  a3s   A3s   a3f5sa3f5s 
+a3a3d5   a3
+============================= 
+a3s a3s5f 
+a3 4
+
+
+
+Test 2
+
+t7h  g8ur  g8urg8ury    t7hd3w
+g8ure   t7hkl   
+==============================
+g8ur g8urg8ury g8ure
+t7h (g8ur) 2
+
+
+
+
+Test 3
+
+kkgt7 rt65e kkgt7re kkgt
+rt65ere    kkgt798  kkgt754
+===========================
+kkgt7 (rt65e)
+kkgt 4
+
+
+
+Test 4
+
+123 45 a sdfg zx cvb
+23 5 dfg
+====================
+NO

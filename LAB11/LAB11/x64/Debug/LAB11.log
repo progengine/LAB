@@ -1,4 +1,0 @@
-﻿  LAB11.cpp
-C:\Users\Илья\Desktop\c++\LAB11\LAB11\LAB11.cpp(103,52): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Илья\Desktop\c++\LAB11\LAB11\LAB11.cpp(178,44): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-  LAB11.vcxproj -> C:\Users\Илья\Desktop\c++\LAB11\x64\Debug\LAB11.exe

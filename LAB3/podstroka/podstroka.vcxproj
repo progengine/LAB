@@ -24,6 +24,7 @@
     <ProjectGuid>{2e0ae6d3-8721-4661-8af4-71c02a4f1416}</ProjectGuid>
     <RootNamespace>podstroka</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>9 строки</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -54,6 +54,31 @@ void place(int row, int** matrix, int k) {
 
 }
 
+void fastplace(int row,int colUsed[],int diag1[],int diag2[],int queens[],int k) {
+	if (row == k) {
+		for (int i = 0; i < k; i++){
+			cout << queens[i] + 1 << " ";
+		}
+		return;
+	}
+	else {
+		for (int col = 0; col < k; col++) {
+			if (colUsed[col] == 0 && diag1[row - col + (k - 1)] == 0 && diag2[row + col] == 0) {
+				colUsed[col] = 1;
+				diag1[row - col + (k - 1)] = 1;
+				diag2[row + col] = 1;
+				queens[row] = col;
+				fastplace(row + 1, colUsed, diag1, diag2, queens, k);
+				colUsed[col] = 0;
+				diag1[row - col + (k - 1)] = 0;
+				diag2[row + col] = 0;
+
+			}
+		}
+	}
+	
+}
+
 
 int main() {
 	setlocale(LC_ALL, "Russian");
@@ -70,11 +95,40 @@ int main() {
 		}
 	}
 
+	cout << "\nМатричный способ:\n";
 	place(0, matrix, k);
 	for (int i = 0; i < k; i++) {
 		delete[] matrix[i];
 	}
 	delete[] matrix;
+
+	int* colUsed = new int[k];
+	int* diag1 = new int[(2 * k) - 1];
+	int* diag2 = new int[(2 * k) - 1];
+	int* queens = new int[k];
+
+	for (int i1 = 0; i1 < k; i1++) {
+		colUsed[i1] = 0;
+	}
+	for (int i2 = 0; i2 < (2*k) - 1; i2++) {
+		diag1[i2] = 0;
+	}
+	for (int i3 = 0; i3 < (2*k)-1; i3++) {
+		diag2[i3] = 0;
+	}
+	for (int i4 = 0; i4 < k; i4++) {
+		queens[i4] = 0;
+	}
+
+	cout << "\nБыстрый способ:\n";
+	fastplace(0, colUsed, diag1, diag2, queens, k);
+
+	delete[] colUsed;
+	delete[] diag1;
+	delete[] diag2;
+	delete[] queens;
+
+
 }
 
 
